@@ -104,7 +104,7 @@ function Breathe () {
 }
 serial.writeLine("Starting...")
 basic.showLeds(`
-    . . . . .
+    . # . . .
     . # . . .
     . . . . .
     . . . . .
@@ -113,7 +113,7 @@ basic.showLeds(`
 basic.showLeds(`
     . . . . .
     . . . . .
-    . # . . .
+    # # . . .
     . . . . .
     . . . . .
     `)
@@ -121,39 +121,39 @@ basic.showLeds(`
     . . . . .
     . . . . .
     . . . . .
+    # # . . .
     . # . . .
-    . . . . .
     `)
 basic.showLeds(`
     . . . . .
     . . . . .
     . . . . .
     . . # . .
-    . . . . .
+    . . # . .
     `)
 basic.showLeds(`
     . . . . .
     . . . . .
     . . . . .
+    . . . # #
     . . . # .
-    . . . . .
     `)
 basic.showLeds(`
     . . . . .
     . . . . .
+    . . . # #
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
     . . . # .
-    . . . . .
-    . . . . .
-    `)
-basic.showLeds(`
-    . . . . .
-    . . . # .
+    . . . # #
     . . . . .
     . . . . .
     . . . . .
     `)
 basic.showLeds(`
-    . . . . .
+    . . # . .
     . . # . .
     . . . . .
     . . . . .
