@@ -103,6 +103,10 @@ function Breathe () {
     basic.clearScreen()
 }
 serial.writeLine("Starting...")
+linebeacon.startWithDeviceMessage(
+"Hi",
+"Hi"
+)
 basic.showLeds(`
     . # . . .
     . # . . .
