@@ -1,5 +1,6 @@
 {
     "name": "WIndows 100",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
