@@ -170,3 +170,7 @@ for (let index = 0; index < 3; index++) {
 serial.writeLine("Ready!")
 led.setBrightness(50)
 basic.clearScreen()
+basic.showString("Welcome")
+for (let index = 0; index < 5; index++) {
+    music.play(music.stringPlayable("E D B D E F E D ", 1000), music.PlaybackMode.UntilDone)
+}
