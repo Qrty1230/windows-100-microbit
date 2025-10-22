@@ -1,3 +1,9 @@
+input.onGesture(Gesture.LogoUp, function () {
+    display.rotateTo(display.Direction.Normal)
+})
+input.onGesture(Gesture.TiltLeft, function () {
+    display.rotateTo(display.Direction.LogoToLeft)
+})
 function Snowflake () {
     basic.showLeds(`
         # . # . #
@@ -66,8 +72,8 @@ function Snowflake () {
 function Breathe () {
     basic.clearScreen()
     basic.showLeds(`
-        . . . . .
-        . . . . .
+        . . # . .
+        . . # . .
         . . # . .
         . . . . .
         . . . . .
@@ -102,6 +108,12 @@ function Breathe () {
         `)
     basic.clearScreen()
 }
+input.onGesture(Gesture.TiltRight, function () {
+    display.rotateTo(display.Direction.LogoToRight)
+})
+input.onGesture(Gesture.LogoDown, function () {
+    display.rotateTo(display.Direction.UpsideDown)
+})
 serial.writeLine("Starting...")
 basic.showLeds(`
     . # . . .
@@ -160,15 +172,11 @@ basic.showLeds(`
     . . . . .
     `)
 serial.writeLine("Breatheing...")
-for (let index = 0; index < 3; index++) {
-    Breathe()
-}
+Breathe()
 serial.writeLine("Snowflake...")
-for (let index = 0; index < 3; index++) {
-    Snowflake()
-}
+Snowflake()
 serial.writeLine("Ready!")
-led.setBrightness(50)
 basic.clearScreen()
 music.setVolume(30)
 music.play(music.stringPlayable("E B C5 A B G A F ", 150), music.PlaybackMode.UntilDone)
+music.play(music.stringPlayable("E E - - - - - - ", 150), music.PlaybackMode.UntilDone)
