@@ -1,3 +1,6 @@
+input.onPinPressed(TouchPin.P0, function () {
+    basic.showString(timeanddate.time(timeanddate.TimeFormat.HHMMSS24hr))
+})
 input.onGesture(Gesture.LogoUp, function () {
     display.rotateTo(display.Direction.Normal)
 })

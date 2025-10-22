@@ -7,7 +7,9 @@
         "radio": "*",
         "microphone": "*",
         "linebeacon": "github:pizayanz/pxt-linebeacon#v0.0.14",
-        "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6"
+        "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6",
+        "pxt-katakana": "github:mbitfun/pxt-katakana#v1.0.16",
+        "microbit-pxt-timeanddate": "github:bsiever/microbit-pxt-timeanddate#v2.0.33"
     },
     "files": [
         "main.blocks",
